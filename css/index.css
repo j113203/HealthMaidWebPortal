@@ -3,6 +3,8 @@
 html,body{
     height: 100%;
     width: 100%;
+    min-width: calc(640px * 1.8);
+    min-height: calc(360px * 1.8);
     overflow: hidden;
     background: rgb(101,202,203);
 }
