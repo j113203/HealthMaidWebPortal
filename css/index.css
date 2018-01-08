@@ -1,0 +1,67 @@
+@import url(marx.min.css);
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(101,202,203);
+}
+
+#loading{
+    display: none;
+    width: calc(885px / 2);
+    height: calc(313px / 2);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-65%);
+    background: url("../image/logo.png");
+    background-size: contain;
+}
+
+#loading> #loading\.value{
+    background-color: red;
+    width: 250px;
+    height: 6px;
+    position: absolute;
+    bottom: 43px;
+    left: 106px;
+}
+
+#background{
+    width: calc(640px * 1.8);
+    height: calc(360px * 1.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#hideLogo{
+    background: rgb(101,202,203);
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#splash{
+    width: calc(640px * 1.8);
+    height: calc(360px * 1.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#hideCenter{
+    display: none;
+    width: 350px;
+    height: 120px;
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
