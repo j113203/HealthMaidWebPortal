@@ -6,7 +6,7 @@
     <title>Health Maid</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" defer/>
     <script type="text/javascript" src="js/index.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" defer/>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" defer/>
 
 </head>
 
@@ -20,6 +20,15 @@
             <div id="loading.value">
             </div>
         </div>
+        <div id="loading.options">
+                <button id="loading.options.self.diagnosis">自我診斷</button>
+                <button>玩遊戲</button>
+        </div>
+    </div>
+
+    <div id="screen.symptomsEntered">
+        
+        <button id="screen.symptomsEntered.diagnosis">檢測</button>
     </div>
 
     <div id="screen.symptomsInput">
@@ -77,7 +86,11 @@
             </g>
         </svg>
         <div id="screen.symptomsInput.list">
-            
+            <input id="screen.symptomsInput.symptom" type="text" placeholder="輸入你的病徵..."/>
+            <div id="screen.symptomsInput.lists">
+            </div>
+        </div>
+        <div id="screen.symptomsInput.scanning">
         </div>
     </div>
 
@@ -85,6 +98,9 @@
 
     </div>
 
+    <div id="screen..checking">
+
+    </div>
 
 </body>
 

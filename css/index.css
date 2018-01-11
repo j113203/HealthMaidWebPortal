@@ -30,6 +30,23 @@ html,body{
     left: 106px;
 }
 
+#loading\.options{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+#loading\.options>button{
+    padding: 30px;
+}
+
+#loading\.options\.self\.diagnosis{
+    background: #FF8A80;
+    margin-right: 10px;
+}
+
 #background{
     width: calc(640px * 1.8);
     height: calc(360px * 1.8);
@@ -80,6 +97,16 @@ html,body{
     display: none;
 }
 
+#screen\.symptomsInput\.scanning{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255,0,0,0.3);
+}
+
 #health\.maid{
     background: url("../image/logo.png");
     width: calc(885px / 3);
@@ -89,4 +116,58 @@ html,body{
     top: 0px;
     right: 0px;
     display: none;
+}
+
+#screen\.symptomsInput\.list{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    max-height: 350px;
+    overflow: hidden;
+    background: rgba(33, 33, 33,0.7);
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    width: 240px;
+    display: none;
+    z-index: 2;
+}
+
+#screen\.symptomsInput\.lists{
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+#screen\.symptomsInput\.symptom{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#screen\.symptomsEntered{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+#screen\.symptomsEntered>div{
+    background: #fff;
+    width: auto;
+    display: inline-block;
+    padding: 14px;
+    border-radius: 60%;
+    margin: 20px;
+    z-index: 1;
+    position: absolute;
+    border: 1px dotted black;
+}
+
+#screen\.symptomsEntered>button{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 160px;
+    padding: 16px;
 }
