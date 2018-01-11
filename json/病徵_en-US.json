@@ -1,0 +1,292 @@
+{
+  "result": [
+    {
+      "0": "Abnormal gait (walking)"
+    },
+    {
+      "1": "Abnormal muscle enlargement (hypertrophy)"
+    },
+    {
+      "2": "Anxiety"
+    },
+    {
+      "3": "Binge drinking (alcohol)"
+    },
+    {
+      "4": "Binge eating"
+    },
+    {
+      "5": "Bleeding"
+    },
+    {
+      "6": "Body aches or pains"
+    },
+    {
+      "7": "Broken bones (multiple fractures)"
+    },
+    {
+      "8": "Bruising or discoloration"
+    },
+    {
+      "9": "Chills"
+    },
+    {
+      "10": "Coarse hair"
+    },
+    {
+      "11": "Cough"
+    },
+    {
+      "12": "Craving to eat ice, dirt or paper"
+    },
+    {
+      "13": "Decreased appetite"
+    },
+    {
+      "14": "Decreased sweating"
+    },
+    {
+      "15": "Developmental delays"
+    },
+    {
+      "16": "Difficulty breathing"
+    },
+    {
+      "17": "Difficulty climbing stairs"
+    },
+    {
+      "18": "Difficulty getting up from a chair"
+    },
+    {
+      "19": "Difficulty relaxing muscles after contracting them"
+    },
+    {
+      "20": "Difficulty standing"
+    },
+    {
+      "21": "Difficulty swallowing"
+    },
+    {
+      "22": "Difficulty walking"
+    },
+    {
+      "23": "Dislikes change in daily routine"
+    },
+    {
+      "24": "Distorted body image"
+    },
+    {
+      "25": "Dizziness"
+    },
+    {
+      "26": "Drinking excessive fluids"
+    },
+    {
+      "27": "Dry skin"
+    },
+    {
+      "28": "Easy bleeding"
+    },
+    {
+      "29": "Easy bruising"
+    },
+    {
+      "30": "Excessive body hair growth"
+    },
+    {
+      "31": "Excessive crying"
+    },
+    {
+      "32": "Excessive exercising"
+    },
+    {
+      "33": "Excessive sweating"
+    },
+    {
+      "34": "Excessively salty sweat or skin"
+    },
+    {
+      "35": "Fatigue"
+    },
+    {
+      "36": "Fearful"
+    },
+    {
+      "37": "Feeling faint"
+    },
+    {
+      "38": "Fever"
+    },
+    {
+      "39": "Flaking skin"
+    },
+    {
+      "40": "Flushed skin"
+    },
+    {
+      "41": "Food cravings"
+    },
+    {
+      "42": "Frequent falls"
+    },
+    {
+      "43": "Frequent infections"
+    },
+    {
+      "44": "Frequent laxative use"
+    },
+    {
+      "45": "Giddiness"
+    },
+    {
+      "46": "High blood pressure"
+    },
+    {
+      "47": "Hot, dry skin"
+    },
+    {
+      "48": "Hunger"
+    },
+    {
+      "49": "Hyperactive behavior"
+    },
+    {
+      "50": "Impaired judgement"
+    },
+    {
+      "51": "Impaired social skills"
+    },
+    {
+      "52": "Inability to care for self"
+    },
+    {
+      "53": "Increased sensitivity to cold"
+    },
+    {
+      "54": "Increased sensitivity to heat"
+    },
+    {
+      "55": "Increased thirst"
+    },
+    {
+      "56": "Involuntary movements (picking, lip smacking etc.)"
+    },
+    {
+      "57": "Itching or burning"
+    },
+    {
+      "58": "Joint aches"
+    },
+    {
+      "59": "Jumpiness or easily startled"
+    },
+    {
+      "60": "Loss of balance"
+    },
+    {
+      "61": "Loss of coordination"
+    },
+    {
+      "62": "Low blood pressure"
+    },
+    {
+      "63": "Low self-esteem"
+    },
+    {
+      "64": "Morning alcohol drinking (eye-opener)"
+    },
+    {
+      "65": "Muscle cramps or spasms (painful)"
+    },
+    {
+      "66": "Muscle stiffness (rigidity)"
+    },
+    {
+      "67": "Muscle weakness"
+    },
+    {
+      "68": "Nervousness"
+    },
+    {
+      "69": "Night sweats"
+    },
+    {
+      "70": "Overweight"
+    },
+    {
+      "71": "Pain or discomfort"
+    },
+    {
+      "72": "Pale skin"
+    },
+    {
+      "73": "Palpitations (fluttering in chest)"
+    },
+    {
+      "74": "Poor personal hygiene"
+    },
+    {
+      "75": "Prolonged bleeding"
+    },
+    {
+      "76": "Reduced productivity at work"
+    },
+    {
+      "77": "Restless or irritability"
+    },
+    {
+      "78": "Restrictive dieting"
+    },
+    {
+      "79": "Seizures (uncontrollable jerking of limbs)"
+    },
+    {
+      "80": "Shaking"
+    },
+    {
+      "81": "Shaking chills (rigors)"
+    },
+    {
+      "82": "Short attention span"
+    },
+    {
+      "83": "Short stature"
+    },
+    {
+      "84": "Skin peeling, cracking or scaling"
+    },
+    {
+      "85": "Slow growth (failure to thrive)"
+    },
+    {
+      "86": "Socially withdrawn"
+    },
+    {
+      "87": "Stiffness or decreased movement"
+    },
+    {
+      "88": "Tires quickly"
+    },
+    {
+      "89": "Trembling"
+    },
+    {
+      "90": "Unusual behavior"
+    },
+    {
+      "91": "Weakness (generalized)"
+    },
+    {
+      "92": "Weight gain"
+    },
+    {
+      "93": "Weight loss (intentional)"
+    },
+    {
+      "94": "Weight loss (unintentional)"
+    },
+    {
+      "95": "Wheezing"
+    }
+  ]
+}
