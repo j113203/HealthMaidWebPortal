@@ -158,22 +158,32 @@ var screen_Symptoms = (function () {
 
     var diagnosis = document.getElementById("screen\.symptomsEntered\.diagnosis");
     var scanning = document.getElementById("screen\.symptomsInput\.scanning");
-    diagnosis.addEventListener("click", function () {
+    diagnosis.addEventListener("click", function (event) {
 
         diagnosis.style.display = "none";
         scanning.style.display = "block";
+        screen_symptomsEntered.classList.add("fadeOut");
+        var symptom = [];
+        while (screen_symptomsEntered.firstChild) {
+            if (screen_symptomsEntered.firstChild.tagName == "DIV") {
+                symptom.push(screen_symptomsEntered.firstChild.innerHTML);
+            };
+            screen_symptomsEntered.removeChild(screen_symptomsEntered.firstChild);
+        }
+        screen_symptomsInput_human.removeEventListener("click", screen_symptomsInput_human_onclick);
 
         var moveToTop = function () {
-            if (start<780){
-                scanning.style.top = start+"px";
-                start += 1;
+            if (start < 780) {
+                scanning.style.top = start + "px";
+                start += 50;
                 requestAnimationFrame(moveToTop);
-            }else{
+            } else {
                 screen_symptomsInput.classList.add("fadeOut");
-                screen_symptomsEntered.classList.add("fadeOut");
-                setTimeout(function(){
-
-                },1000);
+                setTimeout(function () {
+                    if (symptom.length) {
+                        screen_Result(symptom);
+                    }
+                }, 1000);
             }
         };
         var start = 0;
@@ -184,5 +194,45 @@ var screen_Symptoms = (function () {
 });
 
 /***
- * Result Page
+ * Result From Analysised
  */
+
+var screen_Result = (function (symptom) {
+
+    var result = document.getElementById("screen\.result");
+    result.style.display = "block";
+    result.classList.add("animated", "fadeIn");
+
+    var detail = document.getElementById("screen\.result\.detail");
+    var myChart = document.getElementById("myChart");
+
+    new Chart(myChart, {
+        "type": "doughnut",
+        "data": {
+            "labels": ["經常焦慮症 (70%)", "驚恐症(60%)", "社交焦慮症(50%)", "強迫症(40%)", "抑鬱症(30%)", "創傷後情緒病(20%)", "抑鬱症(10%)"],
+            "datasets": [{
+                "label": "分析結果",
+                "data": [7,6,5,4,3,2,1],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                ]
+            }]
+        },
+        options: {
+            // This chart will not respond to mousemove, etc
+            events: ['click'],
+            onClick:function(){
+                detail.style.display = "block";
+            }
+        },
+    });
+
+    result.addEventListener("click",function(event){
+        if (event.target == this){
+            detail.style.display = "none";
+        }
+    });
+
+});

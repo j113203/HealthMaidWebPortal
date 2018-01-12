@@ -6,6 +6,7 @@
     <title>Health Maid</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" defer/>
     <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/animate.min.css" defer/>
 
 </head>
@@ -21,19 +22,19 @@
             </div>
         </div>
         <div id="loading.options">
-                <button id="loading.options.self.diagnosis">自我診斷</button>
-                <button>玩遊戲</button>
+            <button id="loading.options.self.diagnosis">自我診斷</button>
+            <button>玩遊戲</button>
         </div>
     </div>
 
     <div id="screen.symptomsEntered">
-        
+
         <button id="screen.symptomsEntered.diagnosis">檢測</button>
     </div>
 
     <div id="screen.symptomsInput">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" width="100%" height="100%" viewBox="0 0 420 780" enable-background="new 0 0 420 780" xml:space="preserve">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+            height="100%" viewBox="0 0 420 780" enable-background="new 0 0 420 780" xml:space="preserve">
             <g id="screen.symptomsInput.human">
                 <path fill="#FFDEC7" d="M375.86,438.039c-4.383-1.051-14.305-5.084-17.721-7.705c-3.414-2.625-9.121-5.25-10.98-10.928
                     c-8.719-26.635-6.174-42.584-12.33-80.583c-3.279-20.259-10.594-38.978-12.291-49.546c-5.002-31.152,0.314-68.261-9.955-100.304
@@ -86,7 +87,7 @@
             </g>
         </svg>
         <div id="screen.symptomsInput.list">
-            <input id="screen.symptomsInput.symptom" type="text" placeholder="輸入你的病徵..."/>
+            <input id="screen.symptomsInput.symptom" type="text" placeholder="輸入你的病徵..." />
             <div id="screen.symptomsInput.lists">
             </div>
         </div>
@@ -100,6 +101,19 @@
 
     <div id="screen..checking">
 
+    </div>
+
+
+    <div id="screen.result">
+        <h3>你可能患上了...</h3>
+        <div id="screen.result.chart">
+            <canvas id="myChart"></canvas>
+            <button>治療師轉介</button>
+            <button>專科醫院求診</button>
+        </div>
+        <div id="screen.result.detail">
+            <iframe src="http://www.cuhk.edu.hk/med/hmdc/mooddisorder/mooddisorder01.html"></iframe>
+        </div>
     </div>
 
 </body>
